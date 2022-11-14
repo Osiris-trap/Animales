@@ -37,7 +37,8 @@ $animal = mysqli_query($conexion,$sql);
                 <td> <?php echo $ver['nombre']; ?> </td>
                 <td> <?php echo $ver['region']; ?> </td>
                 <td> <?php echo $ver['comida']; ?> </td>
-                <td></td>
+                <td> <a href="./editar.php?idp=<?php echo $ver['id']; ?>">
+                        editar</td>
                 <td>
                     <a href="./backend/eliminar.php?idp=<?php echo $ver['id']; ?>">
                         eliminar
